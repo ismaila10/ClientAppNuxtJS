@@ -59,5 +59,4 @@ import ButtonForm from "../components/ui/buttonForm";
 </script>
 
 <style lang="scss" scoped>
-
 </style>

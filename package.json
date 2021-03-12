@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "@sendgrid/mail": "^7.4.2",
     "core-js": "^3.8.3",
     "graphql-tag": "^2.11.0",
+    "net": "^1.0.2",
     "nuxt": "^2.14.12",
     "sass": "^1.32.8",
     "vue-jwt-decode": "^0.1.0"
