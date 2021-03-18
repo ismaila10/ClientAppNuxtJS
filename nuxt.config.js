@@ -56,6 +56,7 @@ export default {
     }
   },
   env: {
-    API_URL: process.env.API_URL
+    API_URL: process.env.API_URL,
+    API_SENDMAIL: process.env.API_SENDMAIL
   }
 }

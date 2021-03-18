@@ -40,12 +40,22 @@
         },
         methods: {
             send: function() {
-              fetch('api/send-email')
+              console.log(this.subject);
+              fetch('/api/send-email', {
+                method: "POST",
+                headers: {
+                  "Content-type": "application/json"
+                },
+                body: JSON.stringify({
+                  email: this.email,
+                  name: this.name,
+                  message: this.message,
+                  subject: this.subject
+                })
+              })
               .then(res => res.json())
               .then(data => console.log(data))
-              .catch(err => console.log(err))
-              alert("iso")
-              console.log(this.message)                              
+              .catch(err => console.log(err))                           
             }
         }
     }

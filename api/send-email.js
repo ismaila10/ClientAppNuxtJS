@@ -4,13 +4,13 @@ const sgMail = require('@sendgrid/mail');
 
 const app = express();
 
-sgMail.setApiKey("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")
+sgMail.setApiKey(process.env.API_SENDMAIL);
 
 app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
               let msg = {
-                to: "morbinho7@hotmail.com",
+                to: "ismaila.diallo@ynov.com",
                 from: req.body.email,
                 subject: `${req.body.subject} from ${req.body.name}`,
                 text: req.body.message
@@ -25,6 +25,6 @@ app.post('/', (req, res) => {
 })
 
 module.exports = {
-    path: "api/send-email", 
+    path: "/api/send-email", 
     handler: app
 }
