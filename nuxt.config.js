@@ -52,12 +52,13 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint:"http://localhost:3030/graphql"
+        httpEndpoint: process.env.API_URL_GRAPHQL
       }
     }
   },
   env: {
     API_URL: process.env.API_URL,
-    API_SENDMAIL: process.env.API_SENDMAIL
+    API_SENDMAIL: process.env.API_SENDMAIL,
+    API_URL_GRAPHQL: process.env.API_URL_GRAPHQL
   }
 }
