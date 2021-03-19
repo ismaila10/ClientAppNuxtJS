@@ -24,9 +24,11 @@ export default {
         user:{}
       }
     },
+    middleware: "auth",
     methods: {
       logout: function() {
         localStorage.removeItem('token');
+        this.$store.commit('loggedOut');
         this.isLogged = false
       }
     },

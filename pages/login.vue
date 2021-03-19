@@ -48,6 +48,7 @@ import ButtonForm from "../components/ui/buttonForm";
                     else {
                       let item = data.token;
                       localStorage.setItem('token', item);
+                      this.$store.commit('isAuth');
                       this.$router.push('account');
                     }
                   }
