@@ -1,5 +1,7 @@
 # clientApp
 
+# Un projet de prise en main du Framework NuxtJS avec la récupération et l'affichage des données provenant d'une API développée en Node js avec Graph QL 
+
 ## Build Setup
 
 ```bash
